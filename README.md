@@ -47,7 +47,7 @@ weatherdata-romania/
 ## Run it locally
 
 ```bash
-git clone https://github.com/<your-username>/weatherdata-romania.git
+git clone https://github.com/flavm00/weatherdata-romania.git
 cd weatherdata-romania
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -91,4 +91,4 @@ cd ml && jupyter notebook ARIMA2.ipynb
 
 ## Author
 
-**Alexandru Flavius Morar** – [GitHub](https://github.com/<your-username>) · [LinkedIn](https://www.linkedin.com/in/<your-profile>)
+**Alexandru Flavius Morar** – [GitHub](https://github.com/flavm00)
