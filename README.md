@@ -91,4 +91,4 @@ cd ml && jupyter notebook ARIMA2.ipynb
 
 ## Author
 
-**Alexandru Flavius Morar** – [GitHub](https://github.com/flavm00)
+**Alexandru Flavius Morar** – [GitHub](https://github.com/flavm00) · [LinkedIn](https://www.linkedin.com/in/alexandru-flavius-morar-5b2333213)
