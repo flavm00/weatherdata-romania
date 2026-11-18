@@ -1,0 +1,9 @@
+# Dependencies for the ARIMA analysis notebook (ARIMA2.ipynb / ARIMA2.py)
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+statsmodels>=0.12
+jupyter

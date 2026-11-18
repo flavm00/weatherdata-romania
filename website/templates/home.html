@@ -1,0 +1,93 @@
+{% extends "base.html" %} {% block title %}Weather Data{% endblock %} {% block content
+%} 
+
+<!--HERO-->
+<section
+    class="md:my-7 sm:h-screen md:h-max  flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center sm:pt-20 lg:px-48 md:px-12  bg-secondary">
+    <div class="md:flex-1 md:mr-10">
+        {% if user.is_authenticated %}
+        <h1 class="font-pt-serif text-5xl font-bold mb-7">
+            Bun venit! 
+            <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
+            </span>
+        </h1>
+        <p class="font-pt-serif font-normal text-lg italic mb-7">
+            Păşeşte spre lumea sălbatică a vremii!
+           
+        </p>
+        <p class="font-pt-serif font-normal text-lg mb-7 ml-5">
+           
+            Învaţă importanţa schimbărilor climatice.
+        </p>
+        <p class="font-pt-serif font-normal text-lg mb-7 ml-10">
+        
+            Viziunea noastră despre schimbarea climei este aici.
+        </p>
+        {% else %}
+        <h1 class="font-pt-serif text-5xl font-bold mb-7">
+            Învaţă să cunoşti pericolele schimbării
+            <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
+        
+            </span>
+        </h1>
+        <p class="font-pt-serif font-normal mb-7">
+            Schimbarea climei nu este despre schimbarea vremii, ci despre schimbarea vieţii.
+        </p>
+        <div class="font-montserrat">
+            <button class="bg-black block px-6 py-4 rounded-lg  text-white mr-2 mb-2 hover:bg-lime-700" onclick="window.location.href='/sign-up'">
+                Începe aici
+            </button>
+        </div>
+        {% endif %}
+    </div>
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
+        <div class="relative">
+            <img src="{{ url_for('static', filename='img/Highlight1.svg') }}" alt="" class="absolute -top-16 -left-10">
+        </div>
+        <img src="{{ url_for('static', filename='img/homeimg1.png') }}" alt="Macbook">
+        <div class="relative">
+            <img src="{{ url_for('static', filename='img/Highlight2.svg') }}" alt="" class="absolute -bottom-10 -right-6">
+        </div>
+    </div>
+</section>
+<!--About section-->
+<section class="md:mt-28 sm:mt-5 bg-green-100 flex flex-col pt-14 items-center">
+    <div>
+        <h2 class="font-pt-serif text-3xl leading-9 mb-8 px-16 pb-8 bg-100%">Ce vei găsi aici</h2>
+    </div>
+    <div class="md:mb-10 sm:mb-5 flex flex-col md:flex-row">
+        <div class="flex-1 mx-8 flex flex-col items-center my-4">
+            
+            <h3 class="font-montserrat font-medium text-xl mb-2">Statistici</h3>
+            <p class="text-center font-montserrat">
+                Date grafice despre fiecare regiune a ţării
+            </p>
+        </div>
+        <div class="flex-1 mx-8 flex flex-col items-center my-4">
+            
+            <h3 class="font-montserrat font-medium text-xl mb-2">Blog</h3>
+            <p class="text-center font-montserrat">
+                Materiale educaţionale pentru a înţelege fenomenele meteorologice severe.
+                Odată cu schimbările climatice, vremea devine mult mai imprevizibilă.
+            </p>
+        </div>
+        <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        
+            <h3 class="font-montserrat font-medium text-xl mb-2">Predicţii</h3>
+            <p class="text-center font-montserrat">
+                Cu ajutorul unor algoritmi de predicţie, o viziune despre tendinţele climei este disponibilă.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-900 flex flex-col pt-14 items-center">
+    <div class="mb-4">
+        <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Logo" class="h-10 w-10">
+    </div>
+    <div class="text-white text-center font-montserrat text-sm">
+        © 2022 Weather Data <br> Author: Morar Alexandru-Flavius.<br>
+        All rights reserved
+    </div>
+</section>
+    
+{% endblock %}

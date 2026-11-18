@@ -1,0 +1,13 @@
+body,
+html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+    padding: 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
